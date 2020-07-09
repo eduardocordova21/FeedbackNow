@@ -1,0 +1,70 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<MasterDetailPage xmlns="http://xamarin.com/schemas/2014/forms"
+                  xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+                  xmlns:prism="http://prismlibrary.com"
+                  prism:ViewModelLocator.AutowireViewModel="True"
+                  x:Class="FeedbackNow.Views.MenuPage">
+
+    <MasterDetailPage.Master>
+
+        <ContentPage Title="Menu" 
+                     BackgroundColor="#00426E">
+
+            <StackLayout>
+
+                <Image Source="PrintWayyLogoBranco.png" 
+                       Margin="30"/>
+
+                <Label Text="Feedback NOW!"
+                       TextColor="White"
+                       FontSize="Medium"
+                       HorizontalTextAlignment="Center"
+                       FontAttributes="Bold"/>
+                
+                <StackLayout Padding="20">
+                
+                    <Button Text="Início" 
+                            CornerRadius="20"
+                            BackgroundColor="#9C7EE6"
+                            TextColor="White"
+                            Visual="Material"
+                            Margin="5"
+                            Command="{Binding NavigateMenuCommand}" 
+                            CommandParameter="MainPage" />
+
+                    <Button Text="Marcar Feedback" 
+                            CornerRadius="20"
+                            BackgroundColor="#00C8FF"
+                            TextColor="White"
+                            Visual="Material"
+                            Margin="5"
+                            Command="{Binding NavigateMenuCommand}" 
+                            CommandParameter="ViewA" />
+
+                    <Button Text="Finalizar Feedback" 
+                            CornerRadius="20"
+                            BackgroundColor="#9C7EE6"
+                            TextColor="White"
+                            Visual="Material"
+                            Margin="5"
+                            Command="{Binding NavigateMenuCommand}" 
+                            CommandParameter="ViewA" />
+
+                    <Button Text="Avaliações" 
+                            CornerRadius="20"
+                            BackgroundColor="#00C8FF"
+                            TextColor="White"
+                            Visual="Material"
+                            Margin="5"
+                            Command="{Binding NavigateMenuCommand}" 
+                            CommandParameter="ViewA" />
+
+                </StackLayout>
+
+            </StackLayout>
+
+        </ContentPage>
+
+    </MasterDetailPage.Master>
+
+</MasterDetailPage>

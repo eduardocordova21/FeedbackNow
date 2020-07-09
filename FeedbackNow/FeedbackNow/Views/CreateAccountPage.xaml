@@ -1,0 +1,51 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:prism="http://prismlibrary.com"
+             prism:ViewModelLocator.AutowireViewModel="True"
+             x:Class="FeedbackNow.Views.CreateAccountPage"    
+             BackgroundColor="#00426E"
+             Title="{Binding Title}">
+
+    <StackLayout Margin="20" VerticalOptions="CenterAndExpand">
+
+        <Image Source="CreateAccountIcon.png"
+               Margin="20"/>
+
+        <Entry Placeholder="Nome"
+               PlaceholderColor="White"
+               TextColor="White"
+               Margin="50, 0, 50, 20"
+               Visual="Material"/>
+
+        <Entry Placeholder="Login"
+               PlaceholderColor="White"
+               TextColor="White"
+               Margin="50, 0, 50, 20"
+               Visual="Material"/>
+
+        <Entry Placeholder="Senha"
+               PlaceholderColor="White"
+               TextColor="White"
+               Margin="50, 0, 50, 20"
+               Visual="Material"
+               IsPassword="True"/>
+
+        <Button Text="Salvar"
+                CornerRadius="20"
+                Margin="100, 20, 100, 0"
+                BackgroundColor="#9C7EE6"
+                TextColor="White"
+                Visual="Material"/>
+
+        <Button Text="Voltar"
+                CornerRadius="20"
+                Margin="100, 20, 100, 0"
+                BackgroundColor="#00C8FF"
+                TextColor="White"
+                Visual="Material"
+                Command="{Binding GoToLoginPageCommand}"/>
+        
+    </StackLayout>
+
+</ContentPage>
