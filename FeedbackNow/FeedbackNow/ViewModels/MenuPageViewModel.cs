@@ -21,7 +21,14 @@ namespace FeedbackNow.ViewModels
 
         private void NavigateMenu(string pageName)
         {
-            _navigationService.NavigateAsync(string.Format("MenuPage/NavigationPage/{0}", pageName));
+            if (pageName == "LoginPage")
+            {
+                _navigationService.NavigateAsync(string.Format("{0}", pageName));
+            }
+            else
+            {
+                _navigationService.NavigateAsync(string.Format("MenuPage/NavigationPage/{0}", pageName));
+            }
         }
     }
 }

@@ -15,22 +15,26 @@
                 <Image Source="PrintWayyLogoBranco.png" 
                        Margin="30"/>
 
-                <Label Text="Feedback NOW!"
-                       TextColor="White"
-                       FontSize="Medium"
-                       HorizontalTextAlignment="Center"
-                       FontAttributes="Bold"/>
-                
-                <StackLayout Padding="20">
-                
-                    <Button Text="Início" 
+                <Button Text="Início" 
                             CornerRadius="20"
                             BackgroundColor="#9C7EE6"
                             TextColor="White"
                             Visual="Material"
-                            Margin="5"
+                            Margin="0 45 0 45"
                             Command="{Binding NavigateMenuCommand}" 
                             CommandParameter="MainPage" />
+
+                <StackLayout Padding="20"
+                             Margin="20 20 10 20"
+                             BackgroundColor="#11637F">
+
+                    <Label Text="Feedback NOW!"
+                           TextColor="White"
+                           FontSize="Medium"
+                           HorizontalTextAlignment="Center"
+                           FontAttributes="Bold"
+                           Margin="0 0 20 0"/>
+
 
                     <Button Text="Marcar Feedback" 
                             CornerRadius="20"
@@ -58,6 +62,61 @@
                             Margin="5"
                             Command="{Binding NavigateMenuCommand}" 
                             CommandParameter="ViewA" />
+
+                </StackLayout>
+
+                <StackLayout Padding="20"
+                             Margin="0 20 0 20"
+                             BackgroundColor="#11637F">
+
+                    <Label Text="Mural de Feedback"
+                           TextColor="White"
+                           FontSize="Medium"
+                           HorizontalTextAlignment="Center"
+                           FontAttributes="Bold"
+                           Margin="0 0 20 0"/>
+
+                    <Button Text="Marcar Feedback" 
+                            CornerRadius="20"
+                            BackgroundColor="#9C7EE6"
+                            TextColor="White"
+                            Visual="Material"
+                            Margin="5"
+                            Command="{Binding NavigateMenuCommand}" 
+                            CommandParameter="ViewA" />
+
+                    <Button Text="Finalizar Feedback" 
+                            CornerRadius="20"
+                            BackgroundColor="#00C8FF"
+                            TextColor="White"
+                            Visual="Material"
+                            Margin="5"
+                            Command="{Binding NavigateMenuCommand}" 
+                            CommandParameter="ViewA" />
+
+                    <Button Text="Avaliações" 
+                            CornerRadius="20"
+                            BackgroundColor="#9C7EE6"
+                            TextColor="White"
+                            Visual="Material"
+                            Margin="5"
+                            Command="{Binding NavigateMenuCommand}" 
+                            CommandParameter="ViewA" />
+
+                </StackLayout>
+
+                <StackLayout Margin="0 0 20 0"
+                             VerticalOptions="EndAndExpand">
+
+                    <Button Text="Sair" 
+                            CornerRadius="20"
+                            BackgroundColor="Red"
+                            TextColor="White"
+                            Visual="Material"
+                            Margin="0 45 0 45"
+                            VerticalOptions="End"
+                            Command="{Binding NavigateMenuCommand}" 
+                            CommandParameter="LoginPage" />
 
                 </StackLayout>
 

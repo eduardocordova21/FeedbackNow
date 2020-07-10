@@ -12,7 +12,7 @@
 
             <Image Source="FeedbackIcon.png"/>
 
-            <Label Text="Feedback NOW!"
+            <Label Text="FeedbackWayy!"
                    TextColor="White"
                    FontSize="30"
                    HorizontalTextAlignment="Center"
