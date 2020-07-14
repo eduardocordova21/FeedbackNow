@@ -19,7 +19,6 @@
                         CornerRadius="20"
                         BackgroundColor="#9C7EE6"
                         TextColor="White"
-                        Margin="10 40 10 40"
                         Visual="Material"
                         Command="{Binding NavigateMenuCommand}" 
                         CommandParameter="MainPage" />
@@ -111,7 +110,6 @@
                             TextColor="White"
                             Visual="Material"
                             VerticalOptions="End"
-                            Margin="10 40 10 40"
                             Command="{Binding NavigateMenuCommand}" 
                             CommandParameter="LoginPage" />
 
