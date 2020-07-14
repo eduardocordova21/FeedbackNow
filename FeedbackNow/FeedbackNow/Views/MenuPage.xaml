@@ -16,24 +16,23 @@
                        Margin="30"/>
 
                 <Button Text="Início" 
-                            CornerRadius="20"
-                            BackgroundColor="#9C7EE6"
-                            TextColor="White"
-                            Visual="Material"
-                            Margin="0 45 0 45"
-                            Command="{Binding NavigateMenuCommand}" 
-                            CommandParameter="MainPage" />
+                        CornerRadius="20"
+                        BackgroundColor="#9C7EE6"
+                        TextColor="White"
+                        Margin="10 40 10 40"
+                        Visual="Material"
+                        Command="{Binding NavigateMenuCommand}" 
+                        CommandParameter="MainPage" />
 
                 <StackLayout Padding="20"
-                             Margin="20 20 10 20"
-                             BackgroundColor="#11637F">
+                             BackgroundColor="#11637F"
+                             Margin="15">
 
                     <Label Text="Feedback NOW!"
                            TextColor="White"
                            FontSize="Medium"
                            HorizontalTextAlignment="Center"
-                           FontAttributes="Bold"
-                           Margin="0 0 20 0"/>
+                           FontAttributes="Bold"/>
 
 
                     <Button Text="Marcar Feedback" 
@@ -66,15 +65,14 @@
                 </StackLayout>
 
                 <StackLayout Padding="20"
-                             Margin="0 20 0 20"
-                             BackgroundColor="#11637F">
+                             BackgroundColor="#11637F"
+                             Margin="15">
 
                     <Label Text="Mural de Feedback"
                            TextColor="White"
                            FontSize="Medium"
                            HorizontalTextAlignment="Center"
-                           FontAttributes="Bold"
-                           Margin="0 0 20 0"/>
+                           FontAttributes="Bold"/>
 
                     <Button Text="Marcar Feedback" 
                             CornerRadius="20"
@@ -105,16 +103,15 @@
 
                 </StackLayout>
 
-                <StackLayout Margin="0 0 20 0"
-                             VerticalOptions="EndAndExpand">
+                <StackLayout VerticalOptions="EndAndExpand">
 
                     <Button Text="Sair" 
                             CornerRadius="20"
                             BackgroundColor="Red"
                             TextColor="White"
                             Visual="Material"
-                            Margin="0 45 0 45"
                             VerticalOptions="End"
+                            Margin="10 40 10 40"
                             Command="{Binding NavigateMenuCommand}" 
                             CommandParameter="LoginPage" />
 
